@@ -10,12 +10,12 @@ CREATE TABLE staff(
     lokasi_tinggal VARCHAR(25) NULL
 );
 
-INSERT INTO staff ( 
-    id_staff, 
-    nama_depan, 
-    nama_belakang, 
+INSERT INTO staff (
+    id_staff,
+    nama_depan,
+    nama_belakang,
     no_KTP,
-    lokasi_tinggal  ) 
+    lokasi_tinggal )
     
     VALUES(
     1, 
@@ -55,8 +55,8 @@ INSERT INTO staff (
     "Kota Bandung"
 );
 
-UPDATE staff SET no_KTP = "1234567891111" WHERE id_staff = 1;
+UPDATE staff SET no_KTP = "1234567893" WHERE id_staff = 1;
 
-DELETE FROM staff WHERE nama_depan = 'Wellington';
+DELETE FROM staff WHERE id_staff = 3;
 
 SELECT * FROM staff WHERE nama_depan = 'Muhammad Ariq'
